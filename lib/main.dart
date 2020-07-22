@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/UI/intray/intray_page.dart';
 import 'package:todo_app/models/global.dart';
 
 void main() {
@@ -40,9 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 TabBarView(
                   children: [
-                    new Container(
-                      color: blueColor,
-                    ),
+                    IntrayPage(),
                     new Container(
                       color: Colors.orange,
                     ),
@@ -85,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: FloatingActionButton(
                     child: Icon(
                       Icons.add,
-                      size: 80,
+                      size: 60,
                     ),
                     backgroundColor: darkPurpleColor,
                     onPressed: () {},
